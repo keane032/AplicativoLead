@@ -1,0 +1,27 @@
+{
+  "name": "Desafio",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest",
+    "gc": "cd android && ./gradlew clean"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.5.5",
+    "jetifier": "^1.6.3",
+    "react": "16.0.0",
+    "react-native": "0.51.0",
+    "react-native-gesture-handler": "1.0.5",
+    "react-navigation": "^3.11.1"
+  },
+  "devDependencies": {
+    "babel-jest": "24.8.0",
+    "babel-preset-react-native": "4.0.1",
+    "jest": "24.8.0",
+    "react-test-renderer": "16.0.0"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
