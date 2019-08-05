@@ -1,0 +1,47 @@
+dependencies: \
+  /Users/roykeane/dev/AplicativoLead/node_modules/react-native/Libraries/NativeAnimation/RCTNativeAnimatedNodesManager.m \
+  /Users/roykeane/dev/AplicativoLead/ios/Pods/Target\ Support\ Files/React-RCTAnimation/React-RCTAnimation-prefix.pch \
+  /Users/roykeane/dev/AplicativoLead/node_modules/react-native/Libraries/NativeAnimation/RCTNativeAnimatedNodesManager.h \
+  /Users/roykeane/dev/AplicativoLead/ios/Pods/Headers/Public/React-Core/React/RCTBridgeModule.h \
+  /Users/roykeane/dev/AplicativoLead/ios/Pods/Headers/Public/React-Core/React/RCTDefines.h \
+  /Users/roykeane/dev/AplicativoLead/ios/Pods/Headers/Public/React-Core/React/RCTUIManager.h \
+  /Users/roykeane/dev/AplicativoLead/ios/Pods/Headers/Public/React-Core/React/RCTBridge.h \
+  /Users/roykeane/dev/AplicativoLead/ios/Pods/Headers/Public/React-Core/React/RCTBridgeDelegate.h \
+  /Users/roykeane/dev/AplicativoLead/ios/Pods/Headers/Public/React-Core/React/RCTJavaScriptLoader.h \
+  /Users/roykeane/dev/AplicativoLead/ios/Pods/Headers/Public/React-Core/React/RCTFrameUpdate.h \
+  /Users/roykeane/dev/AplicativoLead/ios/Pods/Headers/Public/React-Core/React/RCTInvalidating.h \
+  /Users/roykeane/dev/AplicativoLead/ios/Pods/Headers/Public/React-Core/React/RCTRootView.h \
+  /Users/roykeane/dev/AplicativoLead/ios/Pods/Headers/Public/React-Core/React/RCTViewManager.h \
+  /Users/roykeane/dev/AplicativoLead/ios/Pods/Headers/Public/React-Core/React/RCTConvert.h \
+  /Users/roykeane/dev/AplicativoLead/ios/Pods/Headers/Public/React-Core/React/RCTAnimationType.h \
+  /Users/roykeane/dev/AplicativoLead/ios/Pods/Headers/Public/React-Core/React/RCTBorderStyle.h \
+  /Users/roykeane/dev/AplicativoLead/ios/Pods/Headers/Public/React-Core/React/RCTLog.h \
+  /Users/roykeane/dev/AplicativoLead/ios/Pods/Headers/Public/React-Core/React/RCTAssert.h \
+  /Users/roykeane/dev/AplicativoLead/ios/Pods/Headers/Public/React-Core/React/RCTUtils.h \
+  /Users/roykeane/dev/AplicativoLead/ios/Pods/Headers/Public/React-Core/React/RCTPointerEvents.h \
+  /Users/roykeane/dev/AplicativoLead/ios/Pods/Headers/Public/React-Core/React/RCTTextDecorationLineType.h \
+  /Users/roykeane/dev/AplicativoLead/ios/Pods/Headers/Private/yoga/Yoga.h \
+  /Users/roykeane/dev/AplicativoLead/ios/Pods/Headers/Private/yoga/YGEnums.h \
+  /Users/roykeane/dev/AplicativoLead/ios/Pods/Headers/Private/yoga/YGMacros.h \
+  /Users/roykeane/dev/AplicativoLead/ios/Pods/Headers/Private/yoga/YGValue.h \
+  /Users/roykeane/dev/AplicativoLead/ios/Pods/Headers/Public/React-Core/React/RCTEventDispatcher.h \
+  /Users/roykeane/dev/AplicativoLead/ios/Pods/Headers/Public/React-Core/React/UIView+React.h \
+  /Users/roykeane/dev/AplicativoLead/ios/Pods/Headers/Public/React-Core/React/RCTComponent.h \
+  /Users/roykeane/dev/AplicativoLead/node_modules/react-native/Libraries/NativeAnimation/Nodes/RCTAdditionAnimatedNode.h \
+  /Users/roykeane/dev/AplicativoLead/node_modules/react-native/Libraries/NativeAnimation/Nodes/RCTValueAnimatedNode.h \
+  /Users/roykeane/dev/AplicativoLead/node_modules/react-native/Libraries/NativeAnimation/Nodes/RCTAnimatedNode.h \
+  /Users/roykeane/dev/AplicativoLead/node_modules/react-native/Libraries/NativeAnimation/Drivers/RCTAnimationDriver.h \
+  /Users/roykeane/dev/AplicativoLead/node_modules/react-native/Libraries/NativeAnimation/Nodes/RCTDiffClampAnimatedNode.h \
+  /Users/roykeane/dev/AplicativoLead/node_modules/react-native/Libraries/NativeAnimation/Nodes/RCTDivisionAnimatedNode.h \
+  /Users/roykeane/dev/AplicativoLead/node_modules/react-native/Libraries/NativeAnimation/Drivers/RCTEventAnimation.h \
+  /Users/roykeane/dev/AplicativoLead/node_modules/react-native/Libraries/NativeAnimation/Drivers/RCTFrameAnimation.h \
+  /Users/roykeane/dev/AplicativoLead/node_modules/react-native/Libraries/NativeAnimation/Drivers/RCTDecayAnimation.h \
+  /Users/roykeane/dev/AplicativoLead/node_modules/react-native/Libraries/NativeAnimation/Nodes/RCTInterpolationAnimatedNode.h \
+  /Users/roykeane/dev/AplicativoLead/node_modules/react-native/Libraries/NativeAnimation/Nodes/RCTModuloAnimatedNode.h \
+  /Users/roykeane/dev/AplicativoLead/node_modules/react-native/Libraries/NativeAnimation/Nodes/RCTMultiplicationAnimatedNode.h \
+  /Users/roykeane/dev/AplicativoLead/node_modules/react-native/Libraries/NativeAnimation/Nodes/RCTPropsAnimatedNode.h \
+  /Users/roykeane/dev/AplicativoLead/node_modules/react-native/Libraries/NativeAnimation/Drivers/RCTSpringAnimation.h \
+  /Users/roykeane/dev/AplicativoLead/node_modules/react-native/Libraries/NativeAnimation/Nodes/RCTStyleAnimatedNode.h \
+  /Users/roykeane/dev/AplicativoLead/node_modules/react-native/Libraries/NativeAnimation/Nodes/RCTSubtractionAnimatedNode.h \
+  /Users/roykeane/dev/AplicativoLead/node_modules/react-native/Libraries/NativeAnimation/Nodes/RCTTransformAnimatedNode.h \
+  /Users/roykeane/dev/AplicativoLead/node_modules/react-native/Libraries/NativeAnimation/Nodes/RCTTrackingAnimatedNode.h

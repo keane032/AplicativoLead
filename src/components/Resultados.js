@@ -4,7 +4,6 @@ import { Card, ListItem } from 'react-native-elements'
 
 class Resultados extends Component {
     render(){
-
         const { navigation } = this.props;
         const list = [
             {

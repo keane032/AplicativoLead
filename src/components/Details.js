@@ -9,14 +9,10 @@ class Details extends Component {
         const item = navigation.getParam('name', 'unk,now');
         const desc = "descricaosahgdjasgjdgsdjjdgjajsdajsdjasdjssgaajjshdgasjghhhhhhsdsds"
         const avatar = 'https://s3.amazonaws.com/uifaces/faces/twitter/brynn/128.jpg'
-                     
-
+                    
         return(
             <View>
-
-                    <Card title={item}>
-                        
-                        
+                    <Card title={item}>     
                                 <View>
                                 <Image
                                      style={{ 
@@ -28,9 +24,7 @@ class Details extends Component {
                                 />
                                 <Text>Descricao</Text>
                                 <Text>{desc}</Text>
-                                </View>
-                            
-                        
+                                </View>         
                     </Card>
                        
                 </View>
