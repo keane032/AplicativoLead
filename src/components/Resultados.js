@@ -1,12 +1,10 @@
 import React,{ Component }  from 'react';
-import {Text, View, Button, TextInput ,  FlatList, Image, Dimensions} from 'react-native';
-import { Card, ListItem } from 'react-native-elements'
-import axios from 'axios'
-import { TouchableOpacity } from 'react-native-gesture-handler';
+import {Text, View, Button, FlatList, Image, Dimensions, TouchableHighlight, TouchableOpacity } from 'react-native';
+
+import Icon from "react-native-vector-icons/Ionicons";
 
 let api_key = 'c0b184d0bd536dbc696b27c32dbb57ee'
 let image = 'https://image.tmdb.org/t/p/w500/'
-let baseurl= 'https://api.themoviedb.org/3/discover/movie?api_key=###&with_genres=28'
 
 class Resultados extends Component {
     
@@ -15,17 +13,16 @@ class Resultados extends Component {
         paginaAtual:1,
         f_nome:'',
         page: 1,
-        loading: false,
-
+        contraste:true
+        
     }
     
     componentDidMount(){
         this.loadRepositories();
     }
+    
 
     loadRepositories = async () => {
-              
-            if (this.state.loading) return;
         
             const { page } = this.state;
         
@@ -33,6 +30,7 @@ class Resultados extends Component {
           
             const {getParam} = this.props.navigation;
             const f_nome = getParam('f_nome', 'null');
+            this.setState({f_nome})
             const c_id = getParam('c_id', 'null');
             
             if(f_nome!=='null'){
@@ -59,7 +57,7 @@ class Resultados extends Component {
             
           }
         
-        
+          
         keyExtractor = (item, index) => index.toString()
                 
                 render(){ 
@@ -67,35 +65,58 @@ class Resultados extends Component {
                     const { navigate } = this.props.navigation;
 
                     Item = ({item}) => (
+
+                        <View>          
                         <TouchableOpacity onPress={() => navigate(
                             'Details',
-                                item
+                            item
                             )} 
-                            style={{backgroundColor:'white', flexDirection: 'row', 
-                            textAlign: 'left', marginTop:5, marginBottom:5,
-                            marginRight:1}}>
-                            <Image
-                            source = {{uri: image + item.poster_path}} style = {{
-                            margin: 1,
+                            style={{backgroundColor: (this.state.contraste ? "white" : 'black'), flexDirection: 'row', 
+                            textAlign: 'left', marginTop:15, marginBottom:5, marginLeft:25, marginRight:25,
+                            borderTopColor:'Aqua' , borderTopWidth:1, borderBottomColor:"00FFFF",
+                            borderEndWidth:2,
                             height: Dimensions.get('window').width / 3,
-                            width: Dimensions.get('window').width / 3,
-                            }}/>
-                            <Text style={{
-                                flex: 1, fontSize: 25,marginRight:1}}>{item.title}</Text>
+                            
+                            
+                            marginRight:1}}>
+                    
+                            <Image 
+                                source = {{uri: image + item.poster_path}} style = {{
+                                marginLeft: 7,
+                                height: Dimensions.get('window').width / 3 ,
+                                width: Dimensions.get('window').width / 3 ,
+                                }}/>
+                    
+                            <Text style={{ marginLeft:2, 
+                                color:(this.state.contraste ? 'black': 'white'),
+                                flex: 1, fontSize: 30, marginTop:5}}>{item.title}</Text>
+
                         </TouchableOpacity>
+                        </View>
                             )
                     
                     return(  
-                        <View style={{backgroundColor:'gray'}}>
-                            <Button title='Opacidade'/>
+                        <View>
+                        
+                        <TouchableHighlight onPress={() => this.setState({contraste:!this.state.contraste})}>
+                            <Icon name="md-contrast"
+                                color="#ccc"
+                                size={40}
+                                style={{ alignSelf:"center", marginLeft:10}}
+                                ></Icon>
+                        </TouchableHighlight>
                             <FlatList
-                            keyExtractor={this.keyExtractor}
-                            data={this.state.list}
-                            renderItem={Item}
-                            onEndReached={this.loadRepositories}
-                            onEndReachedThreshold={0.1}
-                            ListFooterComponent={this.renderFooter}
+                                style={{marginRight:25}}
+                                keyExtractor={this.keyExtractor}
+                                data={this.state.list}
+                                extraData={this.state.contraste}
+                                renderItem={Item}
+                                onEndReached={this.loadRepositories}
+                                onEndReachedThreshold={0.1} 
                             />
+                            { this.state.list.length === 0 && this.state.f_nome.length > 0 &&
+                            <Text style={{marginTop:4}}>Nenhum</Text>
+                            }
                         </View>
                         )
                     }
@@ -105,5 +126,6 @@ class Resultados extends Component {
 Resultados.navigationOptions = {
     title: 'Resultados',
 }
+
 
 export default Resultados;
