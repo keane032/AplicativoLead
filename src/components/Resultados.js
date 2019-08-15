@@ -97,14 +97,15 @@ class Resultados extends Component {
                     
                     return(  
                         <View>
-                        
-                        <TouchableHighlight onPress={() => this.setState({contraste:!this.state.contraste})}>
-                            <Icon name="md-contrast"
-                                color="#ccc"
-                                size={40}
-                                style={{ alignSelf:"center", marginLeft:10}}
-                                ></Icon>
-                        </TouchableHighlight>
+                            <View style={{ alignSelf:"center"}}>
+                                <TouchableHighlight onPress={() => this.setState({contraste:!this.state.contraste})}>
+                                    <Icon name="md-contrast"
+                                        color="#ccc"
+                                        size={40}
+                                        
+                                        ></Icon>
+                                </TouchableHighlight>
+                            </View>
                             <FlatList
                                 style={{marginRight:25}}
                                 keyExtractor={this.keyExtractor}
@@ -114,9 +115,7 @@ class Resultados extends Component {
                                 onEndReached={this.loadRepositories}
                                 onEndReachedThreshold={0.1} 
                             />
-                            { this.state.list.length === 0 && this.state.f_nome.length > 0 &&
-                            <Text style={{marginTop:4}}>Nenhum</Text>
-                            }
+                            
                         </View>
                         )
                     }

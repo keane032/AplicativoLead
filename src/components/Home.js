@@ -1,6 +1,6 @@
 import React,{ Component }  from 'react';
-import {Text, View, Button, Image, Platform ,Dimensions,ScrollView, TextInput,TouchableOpacity, FlatList, StyleSheet } from 'react-native';
-import { ListItem, SearchBar, colors } from 'react-native-elements'
+import {Text, View, Image, Platform,ScrollView,TouchableOpacity, FlatList, StyleSheet } from 'react-native';
+import { ListItem, SearchBar } from 'react-native-elements'
 import axios from 'axios'
 
 
@@ -88,53 +88,52 @@ class Home extends Component{
 
             <View >
         
-                    <ScrollView contentContainerStyle={{flexGrow:1,justifyContent: 'space-between'}}>
-                <View contentContainerStyle={{flex:1}}>
-                    <SearchBar contentContainerStyle={{flex:1}}
+                    <ScrollView>
+                <View>
+                    <SearchBar
                     containerStyle={{backgroundColor: 'black'}}
                     inputStyle={{backgroundColor: 'gray'}}
                     clearIcon={{color:'gray'}}
                     searchIcon={{ color:'gray'}}
-
-                        platform={Platform.OS === "ios" ? "ios" : "android"}
-                        style={{height: 40, borderColor: 'gray', borderWidth: 1}}
-                        onChangeText={(text) => this.setState({input: text})}
-                        value={this.state.input}
-                        onSubmitEditing={() => navigation.navigate('Resultados',
-                        {f_nome: this.state.input})}
+                    platform={Platform.OS === "ios" ? "ios" : "android"}
+                    style={styles.SearchBar}
+                    onChangeText={(text) => this.setState({input: text})}
+                    value={this.state.input}
+                    onSubmitEditing={() => navigation.navigate('Resultados',
+                    {f_nome: this.state.input})}
                     />      
                 
                     <FlatList     
                     horizontal={true}
-                        contentContainerStyle={styles.list}
                         keyExtractor={this.keyExtractor}
                         data={this.state.generos}
                         renderItem={Item}
                     />
                 </View>
                         <View style={{marginTop:20}}> 
-                            <Text>Recentes</Text>
+                            <Text style={{fontSize:30}}>Recentes</Text>
                             <FlatList
                                 horizontal={true}
-                                contentContainerStyle={styles.list}
                                 keyExtractor={this.keyExtractor}
                                 data={this.state.upcoming}
                                 renderItem={UpItem}
                             />
                         </View>
                         <View style={{marginTop:20}}>
-                            <Text>Populares</Text>
+                            <Text style={{fontSize:30}} >Populares</Text>
                             <FlatList
                                 horizontal={true}
                                 style={{marginBotton:5}}
-                                contentContainerStyle={styles.list}
                                 keyExtractor={this.keyExtractor}
                                 data={this.state.popular}
                                 renderItem={PopItem}
                             />
                         </View>
+
+                         <Text style={{ textAlign:"center", fontSize:10}} >By roy</Text>
+
                     </ScrollView>
-              
+                   
             </View>
         )
     }
@@ -147,9 +146,9 @@ Home.navigationOptions = {
 }
 
 const styles = StyleSheet.create({
-    list: {
-        
-    },
+    SearchBar:{
+        height: 40, borderColor: 'gray', borderWidth: 1
+    }
 
   });
 

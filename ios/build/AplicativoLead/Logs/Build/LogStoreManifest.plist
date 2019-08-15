@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>21CE9C39-31F9-43F8-BEA1-C9AB2A66C369</key>
+		<key>5349D678-6AAA-4D5C-8365-978F518D291B</key>
 		<dict>
 			<key>className</key>
 			<string>IDECommandLineBuildLog</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>21CE9C39-31F9-43F8-BEA1-C9AB2A66C369.xcactivitylog</string>
+			<string>5349D678-6AAA-4D5C-8365-978F518D291B.xcactivitylog</string>
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
@@ -30,45 +30,13 @@
 			<key>signature</key>
 			<string>Building workspace AplicativoLead with scheme AplicativoLead and configuration Debug</string>
 			<key>timeStartedRecording</key>
-			<real>587485750.06857395</real>
+			<real>587563914.72540605</real>
 			<key>timeStoppedRecording</key>
-			<real>587485751.25020003</real>
+			<real>587563915.74689901</real>
 			<key>title</key>
 			<string>Building workspace AplicativoLead with scheme AplicativoLead and configuration Debug</string>
 			<key>uniqueIdentifier</key>
-			<string>21CE9C39-31F9-43F8-BEA1-C9AB2A66C369</string>
-		</dict>
-		<key>99EFC441-2046-44F1-8C36-EB2FF4A95D7C</key>
-		<dict>
-			<key>className</key>
-			<string>IDECommandLineBuildLog</string>
-			<key>documentTypeString</key>
-			<string>&lt;nil&gt;</string>
-			<key>domainType</key>
-			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
-			<key>fileName</key>
-			<string>99EFC441-2046-44F1-8C36-EB2FF4A95D7C.xcactivitylog</string>
-			<key>primaryObservable</key>
-			<dict>
-				<key>highLevelStatus</key>
-				<string>W</string>
-			</dict>
-			<key>schemeIdentifier-containerName</key>
-			<string>AplicativoLead project</string>
-			<key>schemeIdentifier-schemeName</key>
-			<string>AplicativoLead</string>
-			<key>schemeIdentifier-sharedScheme</key>
-			<integer>1</integer>
-			<key>signature</key>
-			<string>Building workspace AplicativoLead with scheme AplicativoLead and configuration Debug</string>
-			<key>timeStartedRecording</key>
-			<real>587489297.76091099</real>
-			<key>timeStoppedRecording</key>
-			<real>587489299.30671501</real>
-			<key>title</key>
-			<string>Building workspace AplicativoLead with scheme AplicativoLead and configuration Debug</string>
-			<key>uniqueIdentifier</key>
-			<string>99EFC441-2046-44F1-8C36-EB2FF4A95D7C</string>
+			<string>5349D678-6AAA-4D5C-8365-978F518D291B</string>
 		</dict>
 	</dict>
 </dict>

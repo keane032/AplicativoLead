@@ -1,6 +1,6 @@
 import React,{ Component }  from 'react';
-import {Text, View, ImageBackground, Dimensions, Platform, StyleSheet, TouchableHighlight} from 'react-native';
-import { Card, ListItem, Button, Image } from 'react-native-elements';
+import {Text, View, ImageBackground, StyleSheet, TouchableHighlight} from 'react-native';
+import { Card, Image } from 'react-native-elements';
 import { ScrollView } from 'react-native-gesture-handler';
 import Icon from "react-native-vector-icons/Ionicons";
 
